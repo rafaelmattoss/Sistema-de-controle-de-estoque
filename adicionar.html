@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar Produto</title>
+    <link rel="stylesheet" href="adiciona.css">
+</head>
+<body>
+
+
+    
+
+
+
+    </div>
+
+
+
+    <div id="filtre-produto">
+        <label for="filt" id="filtrar-tabela">Filtre Seus Produtos</label>
+        <input type="text" name="filtrar-tabela" id="filtre-produtos">
+    </div>
+
+    <section>
+
+        <table>
+            <thead>
+                <tr>
+                    <th id="descricaoo">Descrição</th>
+                    <th id="tamanho">Tamanho</th>
+                    <th id="cor">Cor</th>
+                    <th id="quantidade">Quantidade</th>
+                    <th id="codigoo">Codigo</th>
+                    <th id="preco">Preço (R$)</th>
+                </tr>
+            </thead>
+            <tbody id="tabela-produtos">
+                <tr class="produto" >
+                    <td class="info-descrição">Camiseta Polo Masculina</td>
+                    <td class="info-tamanho">M</td>
+                    <td class="info-cor">Preta</td>
+                    <td class="info-quantidade">10</td>
+                    <td class="info-codigo">63010001</td>
+                    <td class="info-preco">95</td>
+                </tr>
+
+                <tr class="produto" >
+                    <td class="info-descrição">Tomara que caia</td>
+                    <td class="info-tamanho">G</td>
+                    <td class="info-cor">Rosa</td>
+                    <td class="info-quantidade">50</td>
+                    <td class="info-codigo">63010002</td>
+                    <td class="info-preco">50</td>
+                </tr>
+
+                <tr class="produto">
+                    <td class="info-descrição">Shorts jeans</td>
+                    <td class="info-tamanho">P</td>
+                    <td class="info-cor">Azul Escuro</td>
+                    <td class="info-quantidade">25</td>
+                    <td class="info-codigo">63010003</td>
+                    <td class="info-preco">70</td>
+                </tr>
+
+                <tr class="produto">
+                    <td class="info-descrição">Saia Longa</td>
+                    <td class="info-tamanho">G</td>
+                    <td class="info-cor">Roxo</td>
+                    <td class="info-quantidade">50</td>
+                    <td class="info-codigo">63010005</td>
+                    <td class="info-preco">150</td>
+                </tr>
+                <tr class="produto" >
+                    <td class="info-descrição">Shorts jeans</td>
+                    <td class="info-tamanho">M</td>
+                    <td class="info-cor">Azul Escuro</td>
+                    <td class="info-quantidade">30</td>
+                    <td class="info-codigo">63010007</td>
+                    <td class="info-preco">2</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </section>
+
+    <h1 id="erros"> </h1>
+    <div id="aviso-estoque-baixo" style="display: none;">O material retirado está com o estoque baixo</div>
+
+
+
+    <div id="separador">
+        <section id="add">
+            <ul id="mensagens-erro"></ul>
+            <h1 id="novos">Cadastre Novos Produtos</h1>
+            <form id="form-adiciona" autocomplete="off">
+                <div class="grupo">
+                    <label for="descricao">Descrição:</label>
+                    <input id="descricao" name="descricao" type="text" placeholder="digite a descricao do produto" class="campo">
+                </div>
+                <div class="grupo">
+                    <label for="tamanho">Tamanho:</label>
+                    <input id="tamanho" name="tamanho" type="text" placeholder="digite o tamanho do produto" class="campo campo-medio">
+                </div>
+                <div class="grupo">
+                    <label for="Cor">Cor:</label>
+                    <input id="cor" name="cor" type="text" placeholder="digite a cor do produto" class="campo campo-medio">
+                </div>
+                <div class="grupo">
+                    <label for="quantidade">Quantidade:</label>
+                    <input id="quantidade" name="quantidade" type="text" placeholder="digite a quantidade do peças do produto" class="campo campo-medio">
+                </div>
+                <div class="grupo">
+                    <label for="codigo">Codigo:</label>
+                    <input id="codigo" name="codigo" type="text" placeholder="digite o codigo do produto" class="campo campo-medio">
+                </div>
+                <div class="grupo">
+                    <label for="preco">Preço por Peça:</label>
+                    <input id="preco" name="preco" type="text" placeholder="digite o preço do produto" class="campo campo-medio">
+                </div>
+            </form>
+
+            <button id="adicionar-produto" class="botao bto-principal">ADICIONAR</button>
+        </section>
+
+        <section id="entrada">
+
+            <h1 id="novos" autocomplete="off"> Entrada de Produtos</h1>
+            
+                <div class="grupo">
+                    <label for="codigo"> Código</label>
+                    <input type="text" name="codigo" id="codigoqtd" placeholder="Digite o código do Produto" autocomplete="off" class="entradac" >
+                </div>
+                <div class="grupo">
+                    <label for="qtd"> Quantidade</label>
+                    <input type="text" name="qtd" id="qtd" autocomplete="off" placeholder="Digite a quantidade de peças" class="entradac">
+                </div> <br>
+                <button id="adicionar-quantidade">ADICIONAR</button>
+            
+
+
+        </section>
+
+        <section id="vendass">
+            
+                <button id="venderr">VENDAS</button>
+            
+        
+            <div id="pagina-vendas">
+        
+                <div id="estetic">
+                    <div>
+                        <label for="iproduto" id="iproduto"> Digite o código do produto</label>
+                        <input type="text" name="iproduto" id="dproduto">
+                    </div>
+        
+                    <div>
+                        <label for="ivendas" id="ivendas"> Digite a quantidade de peças da venda</label>
+                        <input type="text" name="ivendas" id="dvendas">
+                    </div>
+        
+                    <div>
+                        <label for="ivalor"> Digite o valor de cada Peça</label>
+                        <input type="text" name="ipreco" id="dpreco">
+                    </div>
+        
+                    <div>
+                        TOTAL (R$)
+                        <h1 id="itotal"> </h1>
+                    </div>
+        
+                    <button id="vender">VENDER</button>
+                    
+            </div>
+        </section>
+    </div>
+
+    
+    
+</body>
+
+<script src="adiciona.js"></script>
+<script src="adicionaqtd.js"></script>
+<script src="filtrar.js"></script>
+<script src="venda.js"></script>
+<script src="remover.js"></script>
+</html>
